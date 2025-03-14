@@ -76,17 +76,7 @@ def calculate_entropy(password):
 # Streamlit App
 st.title("Password Strength Meter 🔒")
 
-# Dark Mode/Light Mode Toggle
-dark_mode = st.sidebar.checkbox("Dark Mode")
-if dark_mode:
-    st.markdown("""
-    <style>
-    .stApp {
-        background-color: #1e1e1e;
-        color: white;
-    }
-    </style>
-    """, unsafe_allow_html=True)
+
 
 # Input for password
 password = st.text_input("Enter your password:", type="password")
